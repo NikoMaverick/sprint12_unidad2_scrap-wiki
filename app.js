@@ -6,7 +6,13 @@ const app = express()
 const url = 'https://es.wikipedia.org/wiki/Categor%C3%ADa:M%C3%BAsicos_de_rap'
 
 app.get('/', (req, res) => {
-    res.send('FUNCIONA !!!!')
+    axios.get(url).then((response) =>{ // Llamamos a axios y nos traemos la url. Una vez que nos la traigamos, tiene que tener una respuesta con el "then"
+        if(response.status === 200) {//Si nos devuelve un 200
+            const html = response.data //Guardamos la respuesta
+            console.log(html)
+            res.send(html)
+        }
+    })
 })
 
 app.listen(3000, () => {
