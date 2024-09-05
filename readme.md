@@ -14,7 +14,7 @@ Aquí estará todo el código de tu proyecto
 - Paso 3: Crear un servidor http ###OK###
 
 - Paso 4: Accederemos a la web de wikipedia (`https://es.wikipedia.org/wiki/Categor%C3%ADa:M%C3%BAsicos_de_rap`), en esa web encontraremos enlaces a los que tendremos que acceder y recorrer esas página y recoger los siguinetes datos:
-  - El título (h1)
+  - El título (h1) ###OK###
   - Todas las imágenes ('img')
   - Todos los textos ('p') 
 
